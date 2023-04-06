@@ -14,6 +14,9 @@
   <link rel="icon" href="/img/3a101e7f56421.png.ico" style="border-radius: 50%;"/>
 </head>
 <body>
+  <div class="loading-animation">
+    <div class="spinner"></div>
+  </div>  
 
 <div class="wrapper">
   <header>
@@ -25,9 +28,9 @@
       <label for="toggler"><i class="ri-menu-line"></i></label>
       <div class="list">
         <ul class="menu">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="./pages/portafolio.html">Portafolio</a></li>
-          <li><a href="#contacto">Contact</a></li>
+          <li><a class="active navbar-tab" href="index.html">Home</a></li>
+          <li><a class="navbar-tab" href="./pages/portafolio.html">Portfolio</a></li>
+          <li><a class="navbar-tab href="#contacto">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -36,12 +39,12 @@
   <main class="main">
     <div class="info-content">
       <h1>I'm <span>Oscar</span> Mendoza</h1>
-      <p class="info-content__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia blanditiis, quam atque sapiente vel necessitatibus rerum quibusdam voluptatem eveniet quaerat nam repellat distinctio nemo quo iusto magnam praesentium quod neque.</p>
-      <a download="" href="#">
+      <p class="info-content__p">Welcome to my personal portfolio! Here you will find a brief introduction about me and my profesional experience. This a beta version so feel free to share any feedback, always appreciated.</p>
+      <a download="" href="./OSCAR RODRIGUEZ CV.pdf">
       <button class="download-cv">Download CV</button>
       </a>
     </div>
-      <img src="./img/Foto-no-bckg-2.png" alt="Oscar Mendoza profile picture">  
+      <img src="./img/IMG_6911-removebg-preview.png" alt="Oscar Mendoza profile picture">  
   </main>
  
 </div> 
@@ -51,9 +54,9 @@
   <div class="about-info" data-aos="fade-left" data-aos-duration="2000">
     <h2>About me</h2>
     <div class="divider"></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, praesentium aliquam? Ratione, et suscipit quasi deleniti rem quos. Ducimus ipsa quis saepe vero est laudantium cupiditate error libero quasi quos?</p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint sapiente rerum illo perferendis facilis dolores, maxime amet eos nihil optio laudantium sed repudiandae, molestias iste corporis, obcaecati hic consectetur libero?</p>
-    <button class="download-cv">Read more</button>
+    <p>I am 26 years old, graduated in international business. I currently reside in Guadalajara, MX with a little more than 1 year of experience studying web development</p>
+    <p>I love playing videogames with my friends (that's right, I'm a fifas guy) I like to exercise, read and most importantly, learn from the people around me.</p>
+    <a href="https://www.linkedin.com/in/oscar-rodr%C3%ADguez-2b3829195/" target="_blank"><button class="download-cv">Read more</button></a>
   </div>  
 </div>
 
@@ -66,37 +69,39 @@
   <div class="container">
     <div class="card">
       <div class="card__img">
+        <img src="./img/react.png" alt="">
       </div>
       <div class="card-title">
-        <h2>Project Description</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam eaque, doloremque perspiciatis autem perferendis aut assumenda voluptatum. Natus cum ea architecto officia id quos atque dignissimos minus facilis quo?</p>
+        <h2>Ecommerce React</h2>
+        <p>Final project for CoderHouse - Ecommerce made w/React and CSS. Add/Remove products and confirm purchases. It contains multiple componentes and so far its not responsive. Will be updated soon...</p>
       </div>
         <div class="projects-links">
-          <a href="">
+          <a href="https://github.com/oscarmendozaa/xgame-shop" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <a href="">
+          <a href="#">
             <i class="fas fa-globe-americas"></i>
           </a>
-          <a href="">
+          <a href="#">
             <i class="fas fa-code"></i>
           </a>
         </div>
         <button class="project-details download-cv">
-          <a href="">
+          <a href="https://github.com/oscarmendozaa/xgame-shop">
             Project details
           </a>
         </button>
     </div>
     <div class="card">
       <div class="card__img">
+        <img src="./img/calculadora-js.png" alt="">
       </div>
       <div class="card-title">
-        <h2>Project Description</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam eaque, doloremque perspiciatis autem perferendis aut assumenda voluptatum. Natus cum ea architecto officia id quos atque dignissimos minus facilis quo?</p>
+        <h2>Calculator JS</h2>
+        <p>Daily practice for CoderHouse. Calculator using only JS, HTML and CSS. Basic operators, functions and button. So far only for practice, its not responsive. Looking forward to add more functionality</p>
       </div>
         <div class="projects-links">
-          <a href="">
+          <a href="https://github.com/oscarmendozaa/Calculadora-Online-DOM" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a href="">
@@ -107,20 +112,21 @@
           </a>
         </div>
         <button class="project-details download-cv">
-          <a href="">
+          <a href="https://github.com/oscarmendozaa/Calculadora-Online-DOM">
             Project details
           </a>
         </button>
     </div>
     <div class="card">
       <div class="card__img">
+        <img src="./img/448-252.png" alt="">
       </div>
       <div class="card-title">
-        <h2>Project Description</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam eaque, doloremque perspiciatis autem perferendis aut assumenda voluptatum. Natus cum ea architecto officia id quos atque dignissimos minus facilis quo?</p>
+        <h2 id="linda">Shooping cart -JS</h2>
+        <p>Daily practice for Udemy course. A functional shop wtih products. Display buttons to add and remove items from arrays and show notifications. Using libraries and Bootstrap.</p>
       </div>
         <div class="projects-links">
-          <a href="">
+          <a href="https://github.com/oscarmendozaa/Proyecto-carrito-final" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a href="">
@@ -131,7 +137,7 @@
           </a>
         </div>
         <button class="project-details download-cv">
-          <a href="">
+          <a href="https://github.com/oscarmendozaa/xgame-shop">
             Project details
           </a>
         </button>
@@ -167,9 +173,9 @@
     <h3>Orgullosamente creado por un estudiante de CoderHouse.</h3>
   </div>
   <div class="sotial-networks">
-    <i class="fab fa-instagram"></i>
-    <i class="fab fa-linkedin"></i>
-    <i class="fab fa-twitter-square"></i>
+    <a href="https://www.instagram.com/oscar__mendozaa/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/oscar-rodr%C3%ADguez-2b3829195/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/FrontendOscar" target="_blank"><i class="fab fa-twitter-square"></i></a>
   </div>
 </footer>
 

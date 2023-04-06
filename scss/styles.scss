@@ -79,6 +79,7 @@ body {
   
   .about p {
     margin-bottom: 1em;
+    color: #191c32;
   }
   
   .portafolio, .contact-section {
@@ -111,8 +112,11 @@ body {
   .card__img {
     width: 100%;
     height: 150px;
-    background-image: url(../img/2-original.png);
     background-size: cover;
+    img{
+      width: 90%;
+      height: 100%;
+    }
   }
 
   .card-title {
@@ -393,3 +397,62 @@ body {
   }
 }
 
+.container__d{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row-reverse;
+  width: 95vw;
+  margin-top: 2em;
+  flex-wrap: wrap;
+
+  .objectives{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container__d {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .objectives{
+    width: 100%;
+  }
+}
+
+//Spinn loading
+.loading-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 2px solid #ffffff;
+  border-top: 2px solid #5a5a5a;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
